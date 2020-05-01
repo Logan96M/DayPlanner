@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar application</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="Js" href="./calander.js">
+    <link rel="stylesheet" href="./calanderStyle.css">
+
+</head>
+
+<body>
+
+    <div class="center">
+        <h1>Daily Planner for: 6am - 3pm workday</h1>
+        <p id="date"></p>
+    </div>
+    <!-- 6am -->
+    <div class="row">
+
+        <div id="6amCol" class="col">
+            <h2>6am</h2>
+            <h3>Enter to-do item</h3>
+            <div id="6amText"></div>
+
+            <div id="main">
+
+                <div id="header">
+
+                </div>
+
+                <form id="myForm">
+
+                    <input type="text" id="fname">
+                </form>
+
+                <p id="demo">
+                    <h2>To-Do: </h2>
+                </p>
+                <p id="message"><br></p>
+
+                <button type="button" onclick="changeText()">Submit</button>
+                <button type="button" onclick="clearText()">Clear</button>
+
+            </div>
+
+
+            <button id="6amSuccess" type="button" class="btn btn-success center centerBtn successBtn"
+                onclick="myFunctionGreen()">Completed</button>
+            <button id="6amFailure" type="button" class="btn btn-danger center centerBtn failureBtn"
+                onclick="myFunctionRed()">Uncompleted </button>
+        </div>
+        <!-- 6am -->
+
+        <!-- 7am -->
+        <div id=7amCol class="col">
+            <h2>7am</h2>
+            <h3>Enter to-do item</h3>
+            <div id="7amText"></div>
+
+
+            <div id="main">
+
+                <div id="header">
+
+                </div>
+
+                <form id="myForm">
+
+                    <input type="text" id="fname7am">
+                </form>
+
+                <p id="demo">
+                    <h2>To-Do: </h2>
+                </p>
+                <p id="message7am"><br></p>
+
+                <button type="button" onclick="changeText7am()">Submit</button>
+                <button type="button" onclick="clearText7am()">Clear</button>
+
+            </div>
+
+
+            <button id="7amSuccess" type="button" class="btn btn-success center centerBtn successBtn"
+                onclick="myFunctionGreen7am()">Completed</button>
+            <button id="7amFailure" type="button" class="btn btn-danger center centerBtn failureBtn"
+                onclick="myFunctionRed7am()">Umcompleted </button>
+        </div>
+        <!-- end of 7am -->
+
+        <div class="w-100"></div> <!-- for columns-->
+
+        <!-- 8am -->
+
+        <div id="8amCol" class="col">
+            <h2>8am</h2>
+            <h3>Enter to-do item</h3>
+
+
+
+            <div id="main">
+
+                <div id="header">
+
+                </div>
+
+                <form id="myForm">
+
+                    <input type="text" id="fname8am">
+                </form>
+
+                <p id="demo">
+                    <h2>To-Do: </h2>
+                </p>
+                <p id="message8am"><br></p>
+
+                <button type="button" onclick="changeText8am()">Submit</button>
+                <button type="button" onclick="clearText8am()">Clear</button>
+
+            </div>
+
+
+            <button id="8amSuccess" type="button" class="btn btn-success center centerBtn successBtn"
+                onclick="myFunctionGreen8am()">Completed</button>
+            <button id="8amFailure" type="button" class="btn btn-danger center centerBtn failureBtn"
+                onclick="myFunctionRed8am()">Umcompleted </button>
+        </div>
+
+        <!-- end of 8am -->
+
+
+
+        <!-- 9am -->
+        <div id="9amCol" class="col">
+            <h2>9am</h2>
+            <h3>Enter to-do item</h3>
+            <div id="main">
+
+                <div id="header">
+
+                </div>
+
+                <form id="myForm">
+
+                    <input type="text" id="fname9am">
+                </form>
+
+                <p id="demo">
+                    <h2>To-Do: </h2>
+                </p>
+                <p id="message9am"><br></p>
+
+                <button type="button" onclick="changeText9am()">Submit</button>
+                <button type="button" onclick="clearText9am()">Clear</button>
+
+            </div>
+
+
+            <button id="9amSuccess" type="button" class="btn btn-success center centerBtn successBtn"
+                onclick="myFunctionGreen9am()">Completed</button>
+            <button id="9amFailure" type="button" class="btn btn-danger center centerBtn failureBtn"
+                onclick="myFunctionRed9am()">Umcompleted </button>
+        </div>
+
+        <!-- end of 9am -->
+
+
+    </div>
+
+
+
+    <!-- end of 9am div col -->
+    </div>
+    <!-- end of 6am - 9am div -->
+    <div class="row">
+
+        <!-- 10am -->
+        <div id="10amCol" class="col">
+            <h2>10am</h2>
+            <h3>Enter to-do item</h3>
+            <div id="main">
+
+                <div id="header">
+
+                </div>
+
+                <form id="myForm">
+
+                    <input type="text" id="fname10am">
+                </form>
+
+                <p id="demo">
+                    <h2>To-Do: </h2>
+                </p>
+                <p id="message10am"><br></p>
+
+                <button type="button" onclick="changeText10am()">Submit</button>
+                <button type="button" onclick="clearText10am()">Clear</button>
+
+            </div>
+
+
+            <button id="10amSuccess" type="button" class="btn btn-success center centerBtn successBtn"
+                onclick="myFunctionGreen10am()">Completed</button>
+            <button id="10amFailure" type="button" class="btn btn-danger center centerBtn failureBtn"
+                onclick="myFunctionRed10am()">Umcompleted </button>
+        </div>
+
+        <!-- end of 10am -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 11am -->
+        <div id="11amCol" class="col">
+            <h2>11am</h2>
+            <h3>Enter to-do item</h3>
+            <div id="main">
+
+                <div id="header">
+
+                </div>
+
+                <form id="myForm">
+
+                    <input type="text" id="fname11">
+                </form>
+
+                <p id="demo">
+                    <h2>To-Do: </h2>
+                </p>
+                <p id="message11"><br></p>
+
+                <button type="button" onclick="changeText11()">Submit</button>
+                <button type="button" onclick="clearText11()">Clear</button>
+
+            </div>
+
+
+            <button id="11amSuccess" type="button" class="btn btn-success center centerBtn successBtn"
+                onclick="myFunctionGreen11am()">Completed</button>
+            <button id="11amFailure" type="button" class="btn btn-danger center centerBtn failureBtn"
+                onclick="myFunctionRed11am()">Umcompleted </button>
+        </div>
+
+        <!-- end of 11am -->
+
+        <div class="w-100"></div>
+
+        <!-- 12pm -->
+        <div id="12Col" class="col">
+            <h2>12pm</h2>
+            <h3>Enter to-do item</h3>
+            <div id="main">
+
+                <div id="header">
+
+                </div>
+
+                <form id="myForm">
+
+                    <input type="text" id="fname12">
+                </form>
+
+                <p id="demo">
+                    <h2>To-Do: </h2>
+                </p>
+                <p id="message12"><br></p>
+
+                <button type="button" onclick="changeText12()">Submit</button>
+                <button type="button" onclick="clearText12()">Clear</button>
+
+            </div>
+
+
+            <button id="11amSuccess" type="button" class="btn btn-success center centerBtn successBtn"
+                onclick="myFunctionGreen12()">Completed</button>
+            <button id="11amFailure" type="button" class="btn btn-danger center centerBtn failureBtn"
+                onclick="myFunctionRed12()">Umcompleted </button>
+        </div>
+
+        <!-- end of 12pm -->
+
+
+        <!-- 1pm -->
+        <div id="1Col" class="col">
+            <h2>1pm</h2>
+            <h3>Enter to-do item</h3>
+            <div id="main">
+
+                <div id="header">
+
+                </div>
+
+                <form id="myForm">
+
+                    <input type="text" id="fname1">
+                </form>
+
+                <p id="demo">
+                    <h2>To-Do: </h2>
+                </p>
+                <p id="message1"><br></p>
+
+                <button type="button" onclick="changeText1()">Submit</button>
+                <button type="button" onclick="clearText1()">Clear</button>
+
+            </div>
+
+
+            <button id="11amSuccess" type="button" class="btn btn-success center centerBtn successBtn"
+                onclick="myFunctionGreen1()">Completed</button>
+            <button id="11amFailure" type="button" class="btn btn-danger center centerBtn failureBtn"
+                onclick="myFunctionRed1()">Umcompleted </button>
+        </div>
+
+        <!-- end of 1pm -->
+    </div>
+    <!-- end of 10am - 1pm -->
+    <div class="row">
+
+        <!-- 2pm -->
+        <div id="2Col" class="col">
+            <h2>2pm</h2>
+            <h3>Enter to-do item</h3>
+            <div id="main">
+
+                <div id="header">
+
+                </div>
+
+                <form id="myForm">
+
+                    <input type="text" id="fname2">
+                </form>
+
+                <p id="demo">
+                    <h2>To-Do: </h2>
+                </p>
+                <p id="message2"><br></p>
+
+                <button type="button" onclick="changeText2()">Submit</button>
+                <button type="button" onclick="clearText2()">Clear</button>
+
+            </div>
+
+
+            <button id="11amSuccess" type="button" class="btn btn-success center centerBtn successBtn"
+                onclick="myFunctionGreen2()">Completed</button>
+            <button id="11amFailure" type="button" class="btn btn-danger center centerBtn failureBtn"
+                onclick="myFunctionRed2()">Umcompleted </button>
+        </div>
+
+        <!-- end of 2pm -->
+
+        <!-- 3pm -->
+        <div id="3Col" class="col">
+            <h2>3pm</h2>
+            <h3>Enter to-do item</h3>
+            <div id="main">
+
+                <div id="header">
+
+                </div>
+
+                <form id="myForm">
+
+                    <input type="text" id="fname3">
+                </form>
+
+                <p id="demo">
+                    <h2>To-Do: </h2>
+                </p>
+                <p id="message3"><br></p>
+
+                <button type="button" onclick="changeText3()">Submit</button>
+                <button type="button" onclick="clearText3()">Clear</button>
+
+            </div>
+
+
+            <button id="11amSuccess" type="button" class="btn btn-success center centerBtn successBtn"
+                onclick="myFunctionGreen3()">Completed</button>
+            <button id="11amFailure" type="button" class="btn btn-danger center centerBtn failureBtn"
+                onclick="myFunctionRed3()">Umcompleted </button>
+        </div>
+
+        <!-- end of 3pm -->
+
+
+        <div class="w-100"></div>
+
+
+      
+    </div>
+    <!-- end of 2pm - 5pm -->
+
+    
+    </div>
+
+
+
+
+    <div id="planner" class="planner"></div>
+
+
+    <script src="lib/moment/moment.min.js"></script>
+    <script>
+        let m = moment()
+        document.getElementById("date").innerHTML = m
+        console.log(`toString() => ${m.toString()}`)
+        console.log(`toISOString() => ${m.toISOString()}`)
+        // 6am /////////
+        function changeText() {
+            var firstName;
+            firstName = document.getElementById("fname").value;
+            document.getElementById("message").innerHTML = (firstName);
+        }
+
+        function clearText() {
+            document.getElementById("message").innerHTML = ("<br>");
+            document.getElementById("fname").value = "";
+        }
+        // end of 6am change/clear text
+        // 7am
+        function changeText7am() {
+            var firstName7am;
+            firstName7am = document.getElementById("fname7am").value;
+            document.getElementById("message7am").innerHTML = (firstName7am);
+        }
+
+        function clearText7am() {
+            document.getElementById("message7am").innerHTML = ("<br>");
+            document.getElementById("fname7am").value = "";
+        }
+        // end of 7am change/clear text
+
+        // 8am change text
+        function changeText8am() {
+            var firstName8am;
+            firstName8am = document.getElementById("fname8am").value;
+            document.getElementById("message8am").innerHTML = (firstName8am);
+        }
+
+        function clearText8am() {
+            document.getElementById("message8am").innerHTML = ("<br>");
+            document.getElementById("fname8am").value = "";
+        }
+        //end 
+        // 9am change text
+        function changeText9am() {
+            var firstName9am;
+            firstName9am = document.getElementById("fname9am").value;
+            document.getElementById("message9am").innerHTML = (firstName9am);
+        }
+
+        function clearText9am() {
+            document.getElementById("message9am").innerHTML = ("<br>");
+            document.getElementById("fname9am").value = "";
+        }
+        //end 
+        // 10am change text
+        function changeText10am() {
+            var firstName10am;
+            firstName10am = document.getElementById("fname10am").value;
+            document.getElementById("message10am").innerHTML = (firstName10am);
+        }
+
+        function clearText10am() {
+            document.getElementById("message10am").innerHTML = ("<br>");
+            document.getElementById("fname10am").value = "";
+        }
+        //end 
+        // 11am change text
+        function changeText11() {
+            var firstName11;
+            firstName11 = document.getElementById("fname11").value;
+            document.getElementById("message11").innerHTML = (firstName11);
+        }
+
+        function clearText11() {
+            document.getElementById("message11").innerHTML = ("<br>");
+            document.getElementById("fname11").value = "";
+        }
+        //end 
+        // 12pm change text
+        function changeText12() {
+            var firstName12;
+            firstName12 = document.getElementById("fname12").value;
+            document.getElementById("message12").innerHTML = (firstName12);
+        }
+
+        function clearText12() {
+            document.getElementById("message12").innerHTML = ("<br>");
+            document.getElementById("fname12").value = "";
+        }
+        //end 
+
+        // 1pm change text
+        function changeText1() {
+            var firstName1;
+            firstName1 = document.getElementById("fname1").value;
+            document.getElementById("message1").innerHTML = (firstName1);
+        }
+
+        function clearText1() {
+            document.getElementById("message1").innerHTML = ("<br>");
+            document.getElementById("fname1").value = "";
+        }
+        //end 
+
+        // 2pm change text
+        function changeText2() {
+            var firstName2;
+            firstName1 = document.getElementById("fname2").value;
+            document.getElementById("message2").innerHTML = (firstName1);
+        }
+
+        function clearText2() {
+            document.getElementById("message2").innerHTML = ("<br>");
+            document.getElementById("fname2").value = "";
+        }
+        //end 
+        // 3pm change text
+        function changeText3() {
+            var firstName2;
+            firstName1 = document.getElementById("fname3").value;
+            document.getElementById("message3").innerHTML = (firstName1);
+        }
+
+        function clearText3() {
+            document.getElementById("message3").innerHTML = ("<br>");
+            document.getElementById("fname3").value = "";
+        }
+        //end 
+
+        // 6am correct/failure
+        function myFunctionGreen() {
+            var element = document.getElementById("6amCol");
+            element.classList.add("correct");
+        }
+
+        function myFunctionRed() {
+            var element = document.getElementById("6amCol");
+            element.classList.add("failure");
+        }
+        // 7am correct/failure
+        function myFunctionGreen7am() {
+            var element = document.getElementById("7amCol");
+            element.classList.add("correct");
+        }
+
+        function myFunctionRed7am() {
+            var element = document.getElementById("7amCol");
+            element.classList.add("failure");
+        }
+        // 8am correct/failure
+        function myFunctionGreen8am() {
+            var element = document.getElementById("8amCol");
+            element.classList.add("correct");
+        }
+
+        function myFunctionRed8am() {
+            var element = document.getElementById("8amCol");
+            element.classList.add("failure");
+        }
+        //9am correct/failure
+        function myFunctionGreen9am() {
+            var element = document.getElementById("9amCol");
+            element.classList.add("correct");
+        }
+
+        function myFunctionRed9am() {
+            var element = document.getElementById("9amCol");
+            element.classList.add("failure");
+        }
+        //10am correct/failure
+        function myFunctionGreen10am() {
+            var element = document.getElementById("10amCol");
+            element.classList.add("correct");
+        }
+
+        function myFunctionRed10am() {
+            var element = document.getElementById("10amCol");
+            element.classList.add("failure");
+        }
+        //11am correct/failure
+        function myFunctionGreen11am() {
+            var element = document.getElementById("11amCol");
+            element.classList.add("correct");
+        }
+
+        function myFunctionRed11am() {
+            var element = document.getElementById("11amCol");
+            element.classList.add("failure");
+        }
+
+        //12pm correct/failure
+        function myFunctionGreen12() {
+            var element = document.getElementById("12Col");
+            element.classList.add("correct");
+        }
+
+        function myFunctionRed12() {
+            var element = document.getElementById("12Col");
+            element.classList.add("failure");
+        }
+        //1pm correct/failure
+        function myFunctionGreen1() {
+            var element = document.getElementById("1Col");
+            element.classList.add("correct");
+        }
+
+        function myFunctionRed1() {
+            var element = document.getElementById("1Col");
+            element.classList.add("failure");
+        }
+
+         //2pm correct/failure
+         function myFunctionGreen2() {
+            var element = document.getElementById("2Col");
+            element.classList.add("correct");
+        }
+
+        function myFunctionRed2() {
+            var element = document.getElementById("2Col");
+            element.classList.add("failure");
+        }
+        //3pm correct/failure
+        function myFunctionGreen3() {
+            var element = document.getElementById("3Col");
+            element.classList.add("correct");
+        }
+
+        function myFunctionRed3() {
+            var element = document.getElementById("3Col");
+            element.classList.add("failure");
+        }
+    </script>
+
+</body>
+
+</html>

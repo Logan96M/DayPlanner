@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+
+    <script type="text/javascript">
+        function changeText7am() {
+            var firstName7am;
+            firstName7am = document.getElementById("fname7am").value;
+            document.getElementById("message7am").innerHTML = (firstName7am);
+        }
+
+        function clearText7am() {
+            document.getElementById("message").innerHTML = ("<br>");
+            document.getElementById("fname").value = "";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div id="main">
+
+        <div id = "header">
+            <h1>Program 2 - Type name here: </h1>
+        </div>
+
+        <form id ="myForm7am">
+            insert your name: <br>
+            <input type ="text" id="fname7am">
+        </form>
+
+        <p id ="demo">Output</p>
+        <p id = "message7am"><br></p>
+
+        <button type="button" onclick="changeText7am()">Submit</button>
+        <button type="button" onclick="clearText7am()">Clear</button>
+
+    </div>
+
+</body>
+
+</html>

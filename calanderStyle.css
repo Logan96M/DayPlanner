@@ -1,0 +1,44 @@
+.center {
+  text-align: center;
+  
+  
+}
+.centerBtn {
+  display:inline-block;
+  margin: auto;
+  width: 50%;
+  
+  padding: 10px;
+}
+.col {
+  text-align: left;
+  border: 1px solid black;
+  height: 310px
+  
+  
+  
+}
+
+.correct {
+  background-color: green;
+}
+
+h1 {
+
+}
+
+.failure {
+  background-color: red;
+}
+
+
+
+.successBtn{
+  width: fit-content;
+  float: right;
+}
+
+.failureBtn{
+  width: fit-content;
+  float: right;
+}
